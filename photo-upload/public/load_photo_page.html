@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Поиск по ингредиентам</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-container">
+            <div class="logo-container">
+                <img src="photo_main/reciper_icon.png" alt="Reciper" class="site-icon">
+            </div>
+            
+            <nav class="site-nav">
+                <a href="ingredients_page.html" class="nav-link">Поиск по ингредиентам</a></li>
+                <a href="load_photo_page.html" class="nav-link">Поиск по фото</a></li>
+            </nav>
+        </div>
+    </header>
+
+    
+
+    <div class="subheader">
+        <div class="subheader-content">
+            <h2 class="subheader-title">Поиск по фото</h2>
+
+            <div class="file-upload-container">
+                <!-- Основной инпут (скрыт) -->
+                <input type="file" id="fileInput" accept="image/*" style="display: none;">
+                
+                <!-- Первоначальная кнопка -->
+                <button id="initialBtn" class="upload-btn">
+                    Загрузить фото
+                </button>
+                
+                <!-- Группа кнопок после выбора (изначально скрыта) -->
+                <div id="actionButtons" class="action-buttons" style="display: none;">
+                  <button id="changeBtn" class="secondary-btn">
+                    Заменить фото
+                  </button>
+                  <button id="submitBtn" class="primary-btn">
+                    Отправить
+                  </button>
+                </div>
+                
+                <!-- Блок информации о файле -->
+                <div id="fileInfo" class="file-info"></div>
+            </div>            
+        </div>       
+    </div>
+
+    <script src="../script.js"></script>
+
+    <ul id="dish-list">
+        <!-- Dynamically populated list of dishes -->
+    </ul>
+</body>
+</html>

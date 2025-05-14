@@ -268,8 +268,33 @@ body {
 
 /* Responsive Styles */
 @media (max-width: 768px) {
-    .subheader-content {
+    .header-container {
         flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+    
+    nav {
+        gap: 15px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .features-list {
+        flex-direction: column;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .footer-section {
+        text-align: center;
+    }
+    
+    .social-media {
+        justify-content: center;
     }
 }
 
@@ -314,4 +339,58 @@ body {
 /* Отступы между чекбоксами */
 .form-check {
     margin-bottom: 0.5rem;
+}
+
+/* Image Gallery Styles */
+.image-gallery {
+    /* margin: 40px; */
+    width: 100%;
+    padding: 80px;
+}
+
+.image-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 35px;
+    margin-top: 30px;
+}
+
+.image-item {
+    /* flex: 1; */
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.image-container {
+    width: 405px;
+    border-radius: 30px;
+    overflow: hidden;
+    margin-bottom: 25px;
+}
+
+.image-container img {
+    width: 405px;
+    height: 405px;
+    object-fit: cover;
+    display: block;
+}
+
+.text-container {
+    width: 100%;
+    text-align: left;
+    padding: 0 5px;
+}
+
+.text-container h3 {
+    margin: 0 0 8px 0;
+    font-size: 24px;
+    color: #000;
+}
+
+.text-container p {
+    margin: 0;
+    color: #828282;
+    font-size: 24px;
+    line-height: 1.5;
 }

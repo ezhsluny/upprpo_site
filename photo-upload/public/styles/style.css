@@ -448,3 +448,49 @@ body {
     background-color: #000;
     margin: 103px 58px 4px 58px;
 }
+
+/* Recipe Section Styles */
+.recipe-section {
+    padding: 44px 80px;
+    /* display: flex; */
+    justify-content: center;
+    background-color: #fff; /* Фон секции */
+}
+  
+.recipe-container {
+    display: flex;
+    max-width: 1285px;
+    width: 100%;
+    background-color: white;
+    overflow: hidden;
+    align-items: flex-start;
+}
+  
+.recipe-container img {
+    width: 494px;
+    height: 494px;
+    object-fit: cover;
+    border-radius: 30px;
+}
+  
+.recipe-text {
+    align-items: center;
+    /* width: 749px; */
+    padding-left: 42px;
+    color: #000;
+}
+  
+.recipe-text h2 {
+    /* width: 749px; */
+    font-size: 48px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+  
+.recipe-text p {
+    width: 722px;
+    font-size: 32px;
+    line-height: 1.5;
+    letter-spacing: 0.06rem;
+}
